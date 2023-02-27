@@ -1,0 +1,34 @@
+{
+	"manifest_version": 3,
+	"name": "Inter Font EveryWhere",
+	"description": "Enables Inter Medium font on all websites",
+	"version": "1.0",
+	"icons": {
+		"16": "images/16.png",
+		"32": "images/32.png",
+		"48": "images/48.png",
+		"128": "images/128.png",
+		"256": "images/256.png",
+		"512": "images/512.png"
+	},
+	"background": {
+		"service_worker": "sw.js"
+	},
+	"action": {
+		"default_icon": {
+			"16": "images/16.png",
+			"32": "images/32.png",
+			"48": "images/48.png",
+			"128": "images/128.png"
+		}
+	},
+	"permissions": ["activeTab", "scripting"],
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"default": "Ctrl+B",
+				"mac": "Command+B"
+			}
+		}
+	}
+}
